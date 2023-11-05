@@ -18,6 +18,10 @@ body {
     padding: 2rem 0;
     text-align: center;
   }
+
+  .columns li:hover {
+    background-color: #008ba3;
+  }
   
   .container {
     max-width: 1200px;
