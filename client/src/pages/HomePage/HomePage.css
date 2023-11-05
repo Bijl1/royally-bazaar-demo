@@ -1,0 +1,90 @@
+/* HomePage.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  #services {
+    background-color: #f8f8f8;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  .columns {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .columns h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .columns li {
+    flex: 0 0 35%; /* Adjust the width as needed */
+    margin: 0 0 5px 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  #projects {
+    background-color: #e0e0e0;
+    padding: 2rem 0;
+  }
+  
+  .project {}
+  
+  #contact {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  #contact a {
+    color: aquamarine;
+  }
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  #contact h2 {
+    margin-bottom: 20px;
+  }
+  
+  #contact div {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
