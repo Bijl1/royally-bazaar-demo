@@ -7,6 +7,7 @@ function SignupPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [errorMessage, setErrorMessage] = useState(undefined);
 
   const navigate = useNavigate();
@@ -14,11 +15,12 @@ function SignupPage() {
   const handleEmail = (e) => setEmail(e.target.value);
   const handlePassword = (e) => setPassword(e.target.value);
   const handleName = (e) => setName(e.target.value);
+  const handlePhoneNumber = (e) => setPhoneNumber(e.target.value);
 
   const handleSignupSubmit = (e) => {
     e.preventDefault();
     // Create an object representing the request body
-    const requestBody = { email, password, name };
+    const requestBody = { email, password, name, phoneNumber };
 
     // Send a request to the server using axios
     /* 
@@ -50,6 +52,12 @@ function SignupPage() {
       <h1>Sign Up</h1>
 
       <form onSubmit={handleSignupSubmit}>
+        <label>Name:</label>
+        <input type="text" name="name" value={name} onChange={handleName} />
+        
+        <label>Phone Number:</label>
+        <input type="text" name="phoneNumber" value={phoneNumber} onChange={handlePhoneNumber} />
+
         <label>Email:</label>
         <input type="email" name="email" value={email} onChange={handleEmail} />
 
@@ -61,8 +69,7 @@ function SignupPage() {
           onChange={handlePassword}
         />
 
-        <label>Name:</label>
-        <input type="text" name="name" value={name} onChange={handleName} />
+
 
         <button type="submit">Sign Up</button>
       </form>
