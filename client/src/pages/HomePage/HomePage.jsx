@@ -36,12 +36,8 @@ function HomePage() {
         <h1>Royally Bazaar</h1>
       </header>
 
-      <section id="services">
+      <section id="services"> 
         <div className="container">
-          <p>As dedicated professionals with 15 years of experience, we take pride in exceeding customer expectations. 
-            Countless clients have turned to us to rectify issues left unresolved by previous contractors. We prioritize 
-            even the smallest details and ensure that every job site reflects our commitment to excellence. Our track 
-            record speaks volumes - No task is too challenging for us to handle.</p>
           <ul className="columns">
           <h2>Our Services</h2>
             {services.map((service, index) => (

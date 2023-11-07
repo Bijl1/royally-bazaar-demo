@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 import Navbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
@@ -43,6 +44,8 @@ function App() {
             </IsAnon>
           }
         />
+
+<Route path="/aboutus" element={<AboutUs />} />
       </Routes>
     </div>
   );

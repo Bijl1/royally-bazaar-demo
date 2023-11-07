@@ -14,6 +14,11 @@ function Navbar() {
         <button>Home</button>
       </Link>
 
+      <Link to="/AboutUs">
+            <button>About Us</button>
+            {/* <img src="https://picsum.photos/id/402/200/300" style={{ width: 50, height: 50, borderRadius: 25}} alt="profile" /> */}
+          </Link>
+
       {isLoggedIn && (
         <>
           <button onClick={logOutUser}>Logout</button>
