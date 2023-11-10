@@ -52,6 +52,7 @@ function HomePage() {
           <h2>Before and After Projects</h2>
           <div className="project">
             {/* Add the project images here */}
+            <p class="coming-soon-notice">🚧 Stay tuned! Visual transformations will be displayed here shortly. 🚧</p>
           </div>
         </div>
       </section>
