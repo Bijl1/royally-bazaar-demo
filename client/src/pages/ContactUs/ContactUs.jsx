@@ -36,6 +36,6 @@ function ContactUs() {
       </form>
     </div>
   );
-}
+}  
 
 export default ContactUs;
